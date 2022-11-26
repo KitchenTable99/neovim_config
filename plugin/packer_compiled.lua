@@ -209,15 +209,15 @@ _G.packer_plugins = {
     path = "/Users/cbitting/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vim-dogrun"] = {
+    loaded = true,
+    path = "/Users/cbitting/.local/share/nvim/site/pack/packer/start/vim-dogrun",
+    url = "https://github.com/wadackel/vim-dogrun"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/Users/cbitting/.local/share/nvim/site/pack/packer/start/vim-maximizer",
     url = "https://github.com/szw/vim-maximizer"
-  },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/Users/cbitting/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
-    url = "https://github.com/bluz71/vim-nightfly-guicolors"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,
