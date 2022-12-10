@@ -5,18 +5,14 @@ end
 
 treesitter.setup({
 	highlight = { enable = true },
-	indent = { enable = true },
+	indent = { enable = false },
 	ensure_installed = {
 		"json",
-		"yaml",
-		"bash",
 		"lua",
 		"vim",
 		"gitignore",
 		"python",
 		"rust",
-		"java",
-		"kotlin",
 	},
 	auto_isntall = true,
 })

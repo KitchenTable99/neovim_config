@@ -31,18 +31,21 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim")
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
-	use("wadackel/vim-dogrun")
+	use("wadackel/vim-dogrun") -- color scheme
+	use("lewis6991/impatient.nvim")
+	use("startup-nvim/startup.nvim")
 
 	-- navigation
-	use("christoomey/vim-tmux-navigator")
 	use("szw/vim-maximizer")
+	use("christoomey/vim-tmux-navigator")
 
 	-- comments
 	use("numToStr/Comment.nvim")
 
 	-- file explorer
-	use("nvim-tree/nvim-tree.lua")
-	use("kyazdani42/nvim-web-devicons")
+	use("nvim-neo-tree/neo-tree.nvim")
+	use("nvim-tree/nvim-web-devicons")
+	use("MunifTanjim/nui.nvim")
 
 	-- status line
 	use("nvim-lualine/lualine.nvim")
@@ -69,6 +72,9 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("jayp0521/mason-null-ls.nvim")
 
+	-- indenting
+	use("lukas-reineke/indent-blankline.nvim")
+
 	-- treesitter
 	use({
 		"nvim-treesitter/nvim-treesitter",
@@ -82,6 +88,7 @@ return packer.startup(function(use)
 
 	-- git
 	use("lewis6991/gitsigns.nvim")
+	use("rhysd/conflict-marker.vim")
 
 	-- movement
 	use("ggandor/leap.nvim")

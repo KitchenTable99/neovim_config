@@ -25,11 +25,16 @@ keymap.set("n", "<leader>tp", "<CMD>tabp<CR>")
 
 -- plugins
 
+-- Comment
+keymap.set("n", "<leader>/", "<CMD>lua require('Comment.api').toggle.linewise.current()<CR>")
+keymap.set("v", "<leader>/", "<esc><CMD>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>")
+
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
 -- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>e", ":Neotree toggle<CR>")
+keymap.set("n", "<leader>o", ":Neotree focus<CR>")
 
 -- telescope
 keymap.set("n", "<leader>ff", "<CMD>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
